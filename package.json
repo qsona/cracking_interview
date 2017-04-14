@@ -1,0 +1,22 @@
+{
+  "name": "cracking_interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qsona/cracking_interview.git"
+  },
+  "author": "qsona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qsona/cracking_interview/issues"
+  },
+  "homepage": "https://github.com/qsona/cracking_interview#readme",
+  "devDependencies": {
+    "ava": "^0.19.1"
+  }
+}
