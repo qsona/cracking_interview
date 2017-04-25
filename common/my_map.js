@@ -3,6 +3,7 @@ const MAX_HASH_LEN = 65536;
 module.exports = class MyMap {
   constructor() {
     this._table = new Array(MAX_HASH_LEN);
+    this._keys = [];
   }
 
   set(key, value) {
@@ -17,6 +18,7 @@ module.exports = class MyMap {
       }
     }
     target.push(keyValue);
+    this._keys.push(key);
     return;
   }
 
@@ -29,6 +31,10 @@ module.exports = class MyMap {
         return target[i].value;
       }
     }
+  }
+
+  keys() {
+    return this._keys.slice();
   }
 
   static calcHashValue(key) {
